@@ -1,0 +1,256 @@
+/*
+COLOR PALETTE
+https://coolors.co/011627-f71735-41ead4-fdfffc-ff9f1c
+#011627 - Rich Black
+#F71735 - Imperial Red
+#41EAD4 - Turqouise
+#41ead4 - Light Cyan
+#FDFFFC - Baby Powder
+#FF9F1C - Orange Peel
+
+EUCALYPTUS COLOR PALETTE
+https://coolors.co/efefef-ddd6d3-b5aeab-718879-2e4d43
+#efefef - Cultured
+#ddd6d3 - Timberwolf
+#b5aeab - Silver Chalice
+#718879 - Xanadu
+#2E4D43 - MSU Green
+#020202 - Rich Black FOGRA 39
+#FDFFFC - Baby Powder
+
+*/
+
+/* Global Style
+----------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #020202;
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #718879;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 4px;
+  color: #fdfffc;
+  background-color: #020202;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background: rgba(1, 22, 39, 0.8);
+}
+.content-wrap {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Profile
+----------------------------------------*/
+header {
+  background: #2e4d43;
+  color: #efefef;
+}
+
+.profile-picture {
+  margin: 0 20px;
+  width: auto;
+  border-radius: 50%;
+  float: left;
+}
+
+/* Projects
+----------------------------------------*/
+.projects {
+  background: #efefef;
+  clear: both;
+}
+.project {
+  background: #fdfffc;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(1, 22, 39, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project .btn {
+  float: right;
+}
+
+.language {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.language img {
+  background: white;
+  border-radius: 25%;
+  margin: 0 5px;
+  float: left;
+}
+
+/* Work Experience
+----------------------------------------*/
+.work-experience {
+}
+
+.work-experience h3 {
+  margin-bottom: 0px;
+}
+
+.work-experience h3 + p {
+  font-style: italic;
+}
+
+.work-experience h3 ~ p {
+  font-style: italic;
+  margin: 0px;
+}
+
+/* Education
+----------------------------------------*/
+.education {
+  background: #ddd6d3;
+}
+
+.education h3 {
+  line-height: 2.5;
+}
+
+.education h3,
+.education p {
+  margin: 0;
+}
+
+/* Contact
+----------------------------------------*/
+footer {
+  clear: both;
+  color: #fdfffc;
+  background: #718879;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  color: #fdfffc;
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+----------------------------------------*/
+@media screen and (max-width: 1100px) {
+  /* Header
+  ----------------------------------------*/
+  header .profile-picture {
+    float: none;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  header h2 {
+    text-align: center;
+  }
+
+  header p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Header
+  ----------------------------------------*/
+  header .profile-picture {
+    width: 75%;
+    height: 75%;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 27.5px;
+  }
+
+  /* Education
+  ----------------------------------------*/
+  .education h3,
+  .education p {
+    line-height: 1.5;
+  }
+
+  /* Footer
+  ----------------------------------------*/
+  .contact-list {
+    display: block;
+    width: auto;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* footer {
+  clear: both;
+  color: #fdfffc;
+  background: #718879;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  color: #fdfffc;
+  padding: 15px;
+  display: inline-block;
+} */
