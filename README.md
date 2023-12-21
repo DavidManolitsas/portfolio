@@ -1,11 +1,11 @@
 # Portfolio
 
-My portfolio/resume webpage using HTML &amp; CSS
+View my portfolio at https://davidmanolitsas.github.io/portfolio/
 
-## Run
+## Quick Start
 
-To run the project in your default browser, execute the following command:
+To open the project in your default browser, execute the following command:
 
 ```bash
-open index.html
+open ./app/index.html
 ```
